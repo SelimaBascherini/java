@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---Ex 6
+    Date 3 stringhe con valori a piacere, stampare in output quante delle 
+    tre stringhe realizzate iniziano con la lettera 'a'-->
+    <script>
+        // tre variabili valore stringhe 
+        // creare contatore per tenere traccia di quante stringhe iniziano con la lettera a o 0
+        // controllo la prima stringa, vedo se inizia con la A, se inizia con la A incremento il contatore di 1
+        // controllo la seconda stringa, vedo se inizia con la A, se inizia con la A incremento il contatore di 1
+        // controllo la terza stringa, vedo se inizia con la A, se inizia con la A incremento il contatore di 1
+        // stampo il valore del contatore 
+
+        let stringa1='ciao'
+        let stringa2='bla'
+        let stringa3='aaaaaa'
+        let somma = 0
+
+        if(stringa1.charAt(0) == 'a')
+            somma += 1
+        if(stringa2.charAt(0) == 'a')
+            somma += 1
+        if(stringa3.charAt(0) == 'a')
+            somma += 1
+        console.log(somma);
+
+        let stringhe = ['ciao','arma', 'bla', 'aaaaa', 'aaa']
+        let cont= 0
+
+        for(let i=0; i < stringhe.length; i++){
+            if(stringhe[i].charAt(0) == 'a')
+            cont += 1
+        }
+        console.log('ci sono' + cont + 'stringhe che iniziano con la lettera a');
+    </script>
+</body>
+</html>

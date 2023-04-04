@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- crea due stringhe con valore a piacere e far stampare la stringa
+    più lunga con "la stringa più lunga è:" -->:
+    <script>
+        let stringa1 = "ciao"
+        let stringa2 = "buongiorno"
+
+        if (stringa1.length >= stringa2.length){
+            console.log('la stringa più lunga è:' + stringa1)
+        } else if (stringa1.length < stringa2.length) {
+            console.log ('la stringa più lunga è:' + stringa2)
+        } else {
+            console.log('le stringhe sono uguali a' + stringa1 + ' ' + stringa2)
+        }
+    </script>
+
+    <!-- crea una variabile stringa con un valore a piacere e stampare i suoi caratteri
+    invertiti separati da -, in un'unica riga. es mela a-l-e-m -->:
+    <script>
+        let m = "mela"
+        let result = ""
+        let space ="-"
+
+        result= m.charAt(3) + space + m.charAt (2) + space + m.charAt(1) + space + m.charAt(0)
+        console.log(result)
+
+    </script>
+    <!-- -->:
+</body>
+</html>
