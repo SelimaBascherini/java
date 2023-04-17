@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Es. 1 
+        creare una funzione formatDate che, presi in ingresso un numero, una stringa e un numero, stampi una data formattata.
+        Il primo numero rappresenta l'anno, la stringa il nome del mese e il secondo numero il giorno.
+        es: formatDate(2023, 'maggio', 17)   stampa "17-05-2023"*/
+         
+        let y = 2023
+        let m = 4
+        let d = 7
+
+        function formatDate (year, month, day){
+            let y = year
+            let m = month
+            let d = day
+           
+                
+            let mesi = [Gennaio, Febbraio, Marzo, Aprile, Maggio, Giugno, Luglio, Agosto, Settembre, Ottobre, Novembre, Dicembre]
+            for(let i = 0; i < mesi.length; i ++ ){
+                if (month == mesi[i]){
+                    m = i + 1
+                }         
+             }
+             const data = new Date( y, m, d)
+             const res = data.getDate() + '-' + (data.getMonth()+1) + '-' + data.getFullYear()
+             console.log(res)
+        } 
+        
+
+
+    </script>
+</body>
+</html>
