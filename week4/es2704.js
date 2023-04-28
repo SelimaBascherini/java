@@ -28,3 +28,26 @@ function foundNumber(arr, n){
 
 //-----------------------------------------------------------------
 
+/*dati due array ordinati, creare una funzione chiamata merge, 
+che prende in ingresso i due array e ne ritorna uno solo, ordinato*/
+
+//scrivere due array numerici 
+//scrivo una funzione merge prende in entrata due parametri 
+//creo un ciclo for che mi legga gli array 
+//
+
+function merge(arr1, arr2) {
+    let array = []
+    for (let i = 0, j = 0; i < arr1.length || j < arr2.length;) {
+        if (arr1[i] <= arr2[j]) {
+            array.push(arr1[i])
+            i++
+        }
+        else {
+            array.push(arr2[j])
+            j++
+        }
+    }
+    return array
+}
+
