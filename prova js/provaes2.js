@@ -20,7 +20,7 @@ Siamo tutti pazzi qui*/
 //creo l'array e ci metto dentro la punteggiatura
 //ciclo l'array 
 //creo if e gli dico SE il carattere 0 della stringa === al carattere 0 dell'array 
-//ritorna "è pazza" 
+//se corrisponde ritorna "è pazza" 
  
 
 
